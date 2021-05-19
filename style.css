@@ -58,13 +58,13 @@ body {
 }
 
 .active {
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
 .section-wrap {
     width: 100%;
     height: auto;
-    margin-top: 50px;
+    margin: 50px 0px;
     padding: 10px 80px;
 }
 
@@ -85,6 +85,23 @@ body {
     min-width: 340px;
 }
 
+.value-wrap {
+    margin: 100px auto 50px auto;
+    background-color: white;
+    padding: 10px 50px;
+    border-radius: 8px;
+}
+
+.value-group {
+    background-color: #EBF9FF;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 5px 10px;
+    color: var(--DarkBlue);
+    font-size: 14px;
+    min-width: 150px;
+}
+
 @media only screen and (max-width: 600px) {
     .section-wrap {
         margin-top: 10px;
@@ -100,6 +117,6 @@ body {
         font-size: 14px;
     }
     .image-one {
-        margin-top: 10px;
+        margin-top: 15px;
     }
 }

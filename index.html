@@ -39,26 +39,26 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link active" id="home" onclick="menuClick(this.id)" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tokenmics</a>
+                    <a class="nav-link" id="tokenmics" onclick="menuClick(this.id)" href="#">Tokenmics</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">How to buy</a>
+                    <a class="nav-link" id="howtobuy" onclick="menuClick(this.id)" href="#">How to buy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">TimeLine</a>
+                    <a class="nav-link" id="timeline" onclick="menuClick(this.id)" href="#">TimeLine</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Team</a>
+                    <a class="nav-link" id="team" onclick="menuClick(this.id)" href="#">Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Merchandise</a>
+                    <a class="nav-link" id="merchandise" onclick="menuClick(this.id)" href="#">Merchandise</a>
                 </li>
             </ul>
-            <button type="button" class="shadow custom-button">Launch App</button>
+            <button type="button" class="shadow-sm custom-button">Launch App</button>
         </div>
     </nav>
     <!-- Header Navbar End -->
@@ -81,25 +81,39 @@
         </div>
     </div>
     <!--Section one end-->
-    <!--Section two-->
-    <div class="row section-wrap">
-        <div class="col">
-            col
+
+    <div class="bg-white pt-2">
+        <!-- Value Section -->
+        <div class="container value-wrap shadow">
+            <div class="row">
+                <div class="col text-center value-group">
+                    <div>$ .0000499</div>
+                    <div>Value</div>
+                </div>
+                <div class="col text-center value-group">
+                    <div>1,028,046</div>
+                    <div>Holders</div>
+                </div>
+                <div class="col text-center value-group">
+                    <div>203,060,369.70</div>
+                    <div>Liquidity (USD)</div>
+                </div>
+                <div class="col text-center value-group">
+                    <div>2,640,167,994.48</div>
+                    <div>Marcket Cap (USD)</div>
+                </div>
+                <div class="col text-center value-group">
+                    <div>409.226 T</div>
+                    <div>Burned</div>
+                </div>
+            </div>
         </div>
-        <div class="col">
-            col
-        </div>
-        <div class="col">
-            col
-        </div>
-        <div class="col">
-            col
-        </div>
-        <div class="col">
-            col
+        <!-- Value Section End -->
+        <div class="col text-center">
+            <button type="button" class="shadow-lg pl-5 pt-3 pb-3 pr-5 custom-button">Live Chart</button>
         </div>
     </div>
-    <!--Section two end-->
+
 </body>
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
