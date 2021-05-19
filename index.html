@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hova</title>
+    <link rel="icon" href="assets/images/Favicon_Png.png" type="image/icon type">
+    <meta name="theme-color" content="#76C5FF">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
@@ -16,6 +18,7 @@
 
     <!--Aos Css-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Aos Css End-->
 
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -23,36 +26,36 @@
 </head>
 
 <body>
-
     <div id="neon_particles"></div>
 
     <!-- Header Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light mt-2 col-11 mx-auto">
         <a class="navbar-brand mt-3" href="#">
-            <img src="assets/images/Logo.png" width="140" class="d-inline-block align-top" alt="">
+            <img src="assets/images/Logo.png" width="150" alt="Hova Logo">
         </a>
-        <button class="navbar-toggler shadow-sm bg-white border-0" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler shadow-sm bg-white border-0" type="button" data-toggle="collapse"
+            data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link active" id="home" onclick="menuClick(this.id)" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tokenmics</a>
+                    <a class="nav-link" id="tokenmics" onclick="menuClick(this.id)" href="#">Tokenmics</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">How to buy</a>
+                    <a class="nav-link" id="howtobuy" onclick="menuClick(this.id)" href="#">How to buy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">TimeLine</a>
+                    <a class="nav-link" id="timeline" onclick="menuClick(this.id)" href="#">TimeLine</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Team</a>
+                    <a class="nav-link" id="team" onclick="menuClick(this.id)" href="#">Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Merchandise</a>
+                    <a class="nav-link" id="merchandise" onclick="menuClick(this.id)" href="#">Merchandise</a>
                 </li>
             </ul>
             <button type="button" class="shadow-sm custom-button">Launch App</button>
@@ -61,23 +64,56 @@
     <!-- Header Navbar End -->
 
     <!--Section one-->
-    <div class="row section-wrap justify-content-between">
+    <div class="row section-wrap">
         <div class="col-lg-6 col-md-12">
             <span class="intro-text">
-                    Simplifying your payment with
-                    <div class="bold-text">Artifical Intelligence & <br>Block Chain Technology</div>
-                    in Emerging Markets.
-                </span>
+                Simplifying your payment with
+                <div class="bold-text">Artifical Intelligence & <br>Block Chain Technology</div>
+                in Emerging Markets.
+            </span>
             <div class="mt-5">
-                <button type="button" class="shadow-sm custom-button mr-3">Whitepaper</button>
-                <button type="button" class="shadow-sm custom-button">Buy Hova</button>
+                <button type="button" class="shadow custom-button mr-3">Whitepaper</button>
+                <button type="button" class="shadow custom-button">Buy Hova</button>
             </div>
         </div>
-        <div class="col-lg-6" data-aos="fade-up">
+        <div class="col-lg-6 p-0" data-aos="fade-up">
             <img src="./assets/images/LAnding_pg_vector_1.png" alt="" class="image-one">
         </div>
     </div>
     <!--Section one end-->
+
+    <div class="bg-white pt-2">
+        <!-- Value Section -->
+        <div class="container value-wrap shadow">
+            <div class="row">
+                <div class="col text-center value-group">
+                    <div>$ .0000499</div>
+                    <div>Value</div>
+                </div>
+                <div class="col text-center value-group">
+                    <div>1,028,046</div>
+                    <div>Holders</div>
+                </div>
+                <div class="col text-center value-group">
+                    <div>203,060,369.70</div>
+                    <div>Liquidity (USD)</div>
+                </div>
+                <div class="col text-center value-group">
+                    <div>2,640,167,994.48</div>
+                    <div>Marcket Cap (USD)</div>
+                </div>
+                <div class="col text-center value-group">
+                    <div>409.226 T</div>
+                    <div>Burned</div>
+                </div>
+            </div>
+        </div>
+        <!-- Value Section End -->
+        <div class="col text-center">
+            <button type="button" class="shadow-lg pl-5 pt-3 pb-3 pr-5 custom-button">Live Chart</button>
+        </div>
+    </div>
+
 </body>
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -85,5 +121,9 @@
 <script src="./assets/libs/particles.js"></script>
 <script src="./assets/libs/app.js"></script>
 <!-- Scripts End -->
+
+</html>
+
+</html>
 
 </html>
