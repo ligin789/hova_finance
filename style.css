@@ -125,6 +125,7 @@ hr.colored {
 
 .custom-card-wrap {
     width: 70%;
+    margin-bottom: 80px;
 }
 
 .custom-card-number {
@@ -161,6 +162,9 @@ hr.colored {
     }
     .intro-text .bold-text {
         text-shadow: none;
+    }
+    .value-wrap {
+        width: 90%;
     }
     .custom-button {
         font-size: 14px;
