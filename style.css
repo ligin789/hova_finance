@@ -121,6 +121,36 @@ hr.colored {
     /* W3C */
 }
 
+/* Custom card */
+
+.custom-card-wrap {
+    width: 70%;
+}
+
+.custom-card-number {
+    width: 90px;
+}
+
+.custom-card-title {
+    transform: translate(70px, -110px);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.custom-card-image {
+    width: 400px;
+    transform: translate(0px, -15vw);
+}
+
+.custom-card-description {
+    transform: translate(70px, -110px);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Custom card End */
+
 @media only screen and (max-width: 600px) {
     .section-wrap {
         margin-top: 10px;
@@ -138,6 +168,26 @@ hr.colored {
     .image-one {
         margin-top: 15px;
     }
+    /* Custom card */
+    .custom-card-wrap {
+        width: 80%;
+    }
+    .custom-card-number {
+        width: 50px;
+    }
+    .custom-card-title {
+        transform: translate(25px, -60px);
+        width: 170px;
+        font-size: 18px;
+    }
+    .custom-card-image {
+        transform: translate(0px, -30px);
+    }
+    .custom-card-description {
+        transform: translate(0px, 0px);
+        width: 100%;
+    }
+    /* Custom card End */
 }
 
 @media (max-width:2000px) and (min-width:1700px) {
