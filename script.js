@@ -16,9 +16,23 @@ function menuClick(Id) {
 //animation of round token
 $(document).ready(function() {
   $(".tokenmics-card").mouseenter(function(){
-    $(".token-round").animate({left: '500px'},1500);
+    $(".token-round").animate({left: '50%'},2000);
   });
   $(".tokenmics-card").mouseleave(function(){
-    $(".token-round").animate({left: "-300px"},1500);
+    $(".token-round").animate({left: "-20%"},1500);
   });
+});
+
+
+$(window).resize(function() {
+  // This will execute whenever the window is resized
+  let width=$(window).width(); // New height
+  if(width<=1121)
+  {
+    $('#tokenmics-card').addClass('col-12').removeClass('col-7');
+  }
+  else
+  {
+    $('#tokenmics-card').removeClass('col-7').addClass('col-12');
+  }
 });

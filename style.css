@@ -326,18 +326,18 @@ hr.colored {
     }
 }
 
-@media (max-width:886px) {
+@media (max-width:1124px) {
+    .token-round {
+        display: none;
+    }
     .shadow-img1 {
         display: none;
     }
     .shadow-img2 {
         display: none;
     }
-}
-
-@media (max-width:749px) {
-    .token-round {
-        display: none;
+    .tokenmics-card {
+        display: block;
     }
 }
 
