@@ -123,12 +123,26 @@ hr.colored {
     /* W3C */
 }
 
-
 /* Custom card */
 
 .custom-card-wrap {
     width: 70%;
-    margin-bottom: 80px;
+    margin: 0px auto 120px auto;
+    display: grid;
+    grid-template-areas: 'titleGroup cardImage' 'cardDescription cardImage';
+    grid-template-rows: 120px auto;
+}
+
+.custom-card-wrap-two {
+    width: 70%;
+    margin: 0px auto 120px auto;
+    display: grid;
+    grid-template-areas: 'cardImage titleGroup' 'cardImage cardDescription';
+    grid-template-rows: 120px auto;
+}
+
+.custom-card-title-group {
+    grid-area: titleGroup;
 }
 
 .custom-card-number {
@@ -136,25 +150,44 @@ hr.colored {
 }
 
 .custom-card-title {
-    transform: translate(70px, -110px);
+    transform: translate(60px, -110px);
     font-size: 20px;
     font-weight: 600;
 }
 
-.custom-card-image {
-    width: 400px;
-    transform: translate(0px, -15vw);
+.custom-card-image-wrap {
+    grid-area: cardImage;
+    text-align: right;
+}
+
+.custom-card-image-left {
+    float: left;
+}
+
+.custom-card-description-wrap {
+    grid-area: cardDescription;
 }
 
 .custom-card-description {
-    transform: translate(70px, -110px);
+    transform: translate(60px, 10px);
     width: 400px;
-    display: flex;
-    flex-direction: column;
 }
 
-
 /* Custom card End */
+
+@media only screen and (max-width: 1110px) {
+    /* Custom card */
+    .custom-card-wrap {
+        grid-template-areas: 'titleGroup' 'cardImage' 'cardDescription';
+    }
+    .custom-card-wrap-two {
+        grid-template-areas: 'titleGroup' 'cardImage' 'cardDescription';
+    }
+    .custom-card-image-left {
+        float: right;
+    }
+    /* Custom card End */
+}
 
 @media only screen and (max-width: 600px) {
     .section-wrap {
@@ -179,21 +212,26 @@ hr.colored {
     /* Custom card */
     .custom-card-wrap {
         width: 80%;
+        grid-template-areas: 'titleGroup' 'cardImage' 'cardDescription';
+    }
+    .custom-card-wrap-two {
+        width: 80%;
+        grid-template-areas: 'titleGroup' 'cardImage' 'cardDescription';
     }
     .custom-card-number {
         width: 50px;
     }
     .custom-card-title {
-        transform: translate(25px, -60px);
-        width: 170px;
+        transform: translate(40px, -70px);
         font-size: 18px;
-    }
-    .custom-card-image {
-        transform: translate(0px, -30px);
+        font-weight: 600;
+        width: 170px;
     }
     .custom-card-description {
         transform: translate(0px, 0px);
         width: 100%;
+        font-size: 14px;
+        margin-top: 40px;
     }
     /* Custom card End */
 }
@@ -220,7 +258,6 @@ hr.colored {
         font-size: 38px;
     }
 }
-
 
 /* New style*/
 
