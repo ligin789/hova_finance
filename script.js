@@ -16,9 +16,9 @@ function menuClick(Id) {
 //animation of round token
 $(document).ready(function() {
   $(".tokenmics-card").mouseenter(function(){
-    $(".token-round").animate({left: '400px'},1500);
+    $(".token-round").animate({left: '500px'},1500);
   });
   $(".tokenmics-card").mouseleave(function(){
-    $(".token-round").animate({left: "-400px"},1500);
+    $(".token-round").animate({left: "-300px"},1500);
   });
 });
