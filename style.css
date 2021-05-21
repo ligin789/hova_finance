@@ -86,10 +86,12 @@ body {
 }
 
 .value-wrap {
+    position: relative;
     margin: 100px auto 50px auto;
     background-color: white;
     padding: 10px 50px;
     border-radius: 8px;
+    z-index: 3;
 }
 
 .value-group {
@@ -121,6 +123,7 @@ hr.colored {
     /* W3C */
 }
 
+
 /* Custom card */
 
 .custom-card-wrap {
@@ -149,6 +152,7 @@ hr.colored {
     display: flex;
     flex-direction: column;
 }
+
 
 /* Custom card End */
 
@@ -214,5 +218,137 @@ hr.colored {
     }
     .intro-text {
         font-size: 38px;
+    }
+}
+
+
+/* New style*/
+
+.dot-img1 {
+    position: absolute;
+    z-index: 0;
+    top: 80px;
+    left: -40px;
+    transform: rotate(90deg);
+}
+
+.dot-img2 {
+    position: absolute;
+    z-index: 0;
+    top: 70px;
+    left: 250px;
+}
+
+.dot-img3 {
+    position: absolute;
+    z-index: 0;
+    top: 70px;
+    right: 0;
+}
+
+.dot-img4 {
+    position: absolute;
+    z-index: 0;
+    top: 170px;
+    right: 250px;
+}
+
+.dot-img5 {
+    position: absolute;
+    z-index: 0;
+    top: 420px;
+    right: -30px;
+    transform: rotate(90deg);
+}
+
+.dot-img6 {
+    position: absolute;
+    z-index: 0;
+    top: 1200px;
+    left: -50px;
+    transform: rotate(90deg);
+}
+
+.dot-img7 {
+    position: absolute;
+    z-index: 0;
+    left: 5px;
+    top: 6px;
+    z-index: 2;
+    transform: rotate();
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+.tokenmics-card {
+    border-radius: 30px;
+    text-align: left;
+    z-index: 3;
+    display: inline;
+    justify-content: center;
+}
+
+.shadow-img1 {
+    position: absolute;
+    left: 110px;
+    top: -20px;
+    z-index: 0;
+}
+
+.shadow-img2 {
+    position: absolute;
+    left: -170px;
+    top: 150px;
+    z-index: 0;
+}
+
+.bullet-img {
+    transform: rotate(-20deg);
+    width: 25px;
+    height: 25px;
+}
+
+.token-round {
+    right: 0;
+    z-index: 1;
+    left: -200px;
+}
+
+@media (max-width:640px) {
+    .dot-img3 {
+        display: none;
+    }
+    .dot-img1 {
+        display: none;
+    }
+    .dot-img2 {
+        display: none;
+    }
+}
+
+@media (max-width:886px) {
+    .shadow-img1 {
+        display: none;
+    }
+    .shadow-img2 {
+        display: none;
+    }
+}
+
+@media (max-width:749px) {
+    .token-round {
+        display: none;
+    }
+}
+
+@media (min-width:1440px) {
+    .dot-img2 {
+        left: 400px;
+    }
+    .dot-img3 {
+        right: 0;
+    }
+    .dot-img4 {
+        right: 400px;
     }
 }

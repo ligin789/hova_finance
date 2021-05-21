@@ -12,3 +12,13 @@ function menuClick(Id) {
   $('#' + Id).toggleClass('active');
 
 }
+
+//animation of round token
+$(document).ready(function() {
+  $(".tokenmics-card").mouseenter(function(){
+    $(".token-round").animate({left: '400px'},1500);
+  });
+  $(".tokenmics-card").mouseleave(function(){
+    $(".token-round").animate({left: "-400px"},1500);
+  });
+});
