@@ -24,15 +24,15 @@ $(document).ready(function() {
 });
 
 
-$(window).resize(function() {
-  // This will execute whenever the window is resized
-  let width=$(window).width(); // New height
-  if(width<=1121)
-  {
-    $('#tokenmics-card').addClass('col-12').removeClass('col-7');
-  }
-  else
-  {
-    $('#tokenmics-card').removeClass('col-7').addClass('col-12');
-  }
-});
+// $(window).resize(function() {
+//   // This will execute whenever the window is resized
+//   let width=$(window).width(); // New height
+//   if(width<=1121)
+//   {
+//     $('#tokenmics-card').addClass('col-12').removeClass('col-7');
+//   }
+//   else
+//   {
+//     $('#tokenmics-card').removeClass('col-7').addClass('col-12');
+//   }
+// });

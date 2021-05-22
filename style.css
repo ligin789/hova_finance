@@ -123,6 +123,7 @@ hr.colored {
     /* W3C */
 }
 
+
 /* Custom card */
 
 .custom-card-wrap {
@@ -172,6 +173,7 @@ hr.colored {
     transform: translate(60px, 10px);
     width: 400px;
 }
+
 
 /* Custom card End */
 
@@ -259,6 +261,7 @@ hr.colored {
     }
 }
 
+
 /* New style*/
 
 .dot-img1 {
@@ -317,24 +320,31 @@ hr.colored {
     opacity: 0.5;
 }
 
+.tokenomics-main-wrapper {
+    display: flex;
+    flex-flow: wrap;
+}
+
 .tokenmics-card {
     border-radius: 30px;
     text-align: left;
     z-index: 3;
     display: inline;
-    justify-content: center;
+    width: 50%;
+    margin-left: 100px;
+    padding: 0% 3% 0% 2%;
 }
 
 .shadow-img1 {
     position: absolute;
-    left: 110px;
+    left: 270px;
     top: -20px;
     z-index: 0;
 }
 
 .shadow-img2 {
     position: absolute;
-    left: -170px;
+    left: -100px;
     top: 150px;
     z-index: 0;
 }
@@ -374,7 +384,8 @@ hr.colored {
         display: none;
     }
     .tokenmics-card {
-        display: block;
+        width: 100%;
+        margin: 0px;
     }
 }
 
