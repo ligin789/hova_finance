@@ -384,8 +384,8 @@ hr.colored {
         display: none;
     }
     .tokenmics-card {
-        width: 100%;
-        margin: 0px;
+        width: 90%;
+        margin: 0px auto;
     }
 }
 
