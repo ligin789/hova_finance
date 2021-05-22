@@ -123,7 +123,6 @@ hr.colored {
     /* W3C */
 }
 
-
 /* Custom card */
 
 .custom-card-wrap {
@@ -174,8 +173,36 @@ hr.colored {
     width: 400px;
 }
 
-
 /* Custom card End */
+
+/* Team section */
+
+.team-wrap {
+    width: 70%;
+}
+
+.team-card {
+    min-width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.team-position {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.team-image {
+    width: 70%;
+    padding: 10px 20px;
+}
+
+/* Team section end */
 
 @media only screen and (max-width: 1110px) {
     /* Custom card */
@@ -189,6 +216,11 @@ hr.colored {
         float: right;
     }
     /* Custom card End */
+    .team-card {
+        min-width: 250px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -236,6 +268,24 @@ hr.colored {
         margin-top: 40px;
     }
     /* Custom card End */
+    /* Team section */
+    .team-wrap {
+        width: 90%;
+    }
+    .team-card {
+        min-width: 150px;
+    }
+    .team-name {
+        font-size: 14px;
+    }
+    .team-position {
+        font-size: 12px;
+    }
+    .team-image {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    /* Team section end */
 }
 
 @media (max-width:2000px) and (min-width:1700px) {
@@ -260,7 +310,6 @@ hr.colored {
         font-size: 38px;
     }
 }
-
 
 /* New style*/
 
