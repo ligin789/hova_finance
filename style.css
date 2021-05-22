@@ -199,10 +199,84 @@ hr.colored {
 
 .team-image {
     width: 70%;
+    max-width: 250px;
     padding: 10px 20px;
 }
 
 /* Team section end */
+
+/* Footer */
+
+.wrap {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.footer-wrap {
+    width: 90%;
+    border-top-left-radius: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 'brand-card group-links' 'description group-links' 'social-links group-links' 'copyright copyright';
+}
+
+.footer-brand-card {
+    margin-left: -50px;
+    background-color: white;
+    width: 250px;
+    max-height: 100px;
+    padding: 10px 0px;
+    border-radius: 15px;
+    display: inline-table;
+    grid-area: brand-card;
+}
+
+.footer-description {
+    width: 40vw;
+    padding: 30px 80px 8px 80px;
+    color: var(--DarkBlue);
+    grid-area: description;
+}
+
+.footer-social-links {
+    width: 40vw;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    grid-area: social-links;
+}
+
+.footer-group-links {
+    padding: 50px 80px;
+    grid-area: group-links;
+    color: var(--DarkBlue);
+}
+
+.footer-copyright {
+    grid-area: copyright;
+    text-align: center;
+    color: var(--DarkBlue);
+}
+
+/* Footer End */
+
+@media only screen and (max-width: 1100px) {
+    /* Footer */
+    .footer-wrap {
+        grid-template-areas: 'brand-card''description ' 'group-links' 'social-links' ' copyright';
+    }
+    .footer-description {
+        width: 100%;
+    }
+    .footer-social-links {
+        width: 100%;
+    }
+    .footer-group-links {
+        padding: 30px 80px;
+    }
+    /* Footer End */
+}
 
 @media only screen and (max-width: 1110px) {
     /* Custom card */
@@ -216,11 +290,6 @@ hr.colored {
         float: right;
     }
     /* Custom card End */
-    .team-card {
-        min-width: 250px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -273,7 +342,7 @@ hr.colored {
         width: 90%;
     }
     .team-card {
-        min-width: 150px;
+        min-width: 161px;
     }
     .team-name {
         font-size: 14px;
@@ -286,6 +355,24 @@ hr.colored {
         padding: 10px 0px;
     }
     /* Team section end */
+    /* Footer */
+    .footer-description {
+        font-size: 15px;
+        padding: 30px 10px 8px 10px;
+    }
+    .footer-social-links {
+        width: 100%;
+        padding: 10px;
+    }
+    .footer-group-links {
+        font-size: 15px;
+        padding: 20px 10px;
+        grid-area: group-links;
+    }
+    .footer-copyright {
+        font-size: 14px;
+    }
+    /* Footer End */
 }
 
 @media (max-width:2000px) and (min-width:1700px) {
