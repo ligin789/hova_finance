@@ -1,175 +1,247 @@
-.timeline ul {
-    background: #fff;
-    padding: 50px 0;
-}
-
-.timeline ul li {
-    list-style-type: none;
+.timeline {
     position: relative;
-    width: 6px;
-    margin: 0 auto;
-    padding-top: 50px;
-    background: #50C8FF;
+    width: 100%;
+    padding: 30px 0;
 }
 
-.timeline ul li::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: inherit;
+.timeline .timeline-container {
+    position: relative;
+    width: 100%;
+}
+
+.timeline .timeline-end,
+.timeline .timeline-start,
+.timeline .timeline-year {
+    position: relative;
+    width: 100%;
+    text-align: center;
     z-index: 1;
 }
 
-.timeline ul li div {
-    position: relative;
-    bottom: 0;
-    width: 400px;
-    padding: 15px;
-    background: #fff;
-    -webkit-box-shadow: 0 0 5px 2px #50C8FF;
-    -moz-box-shadow: 0 0 5px 2px #50C8FF;
-    box-shadow: #50C8FF 0px 22px 70px 4px;
+.timeline .timeline-end p,
+.timeline .timeline-start p,
+.timeline .timeline-year p {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 30px 0;
+    text-align: center;
+    background: linear-gradient(#76C5FF, #76C5FF);
+    border-radius: 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
-.timeline ul li div::before {
-    content: "";
+.timeline .timeline-year {
+    margin: 30px 0;
+}
+
+.timeline .timeline-continue {
+    position: relative;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.timeline .timeline-continue::after {
     position: absolute;
-    bottom: 7px;
+    content: "";
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    background: #76C5FF;
+}
+
+.timeline .row.timeline-left,
+.timeline .row.timeline-right .timeline-date {
+    text-align: right;
+}
+
+.timeline .row.timeline-right,
+.timeline .row.timeline-left .timeline-date {
+    text-align: left;
+}
+
+.timeline .timeline-date {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 41px 0 0 0;
+}
+
+.timeline .timeline-date::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 45px;
+    background: linear-gradient(#76C5FF, #76C5FF);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.timeline .row.timeline-left .timeline-date::after {
+    left: -7px;
+}
+
+.timeline .row.timeline-right .timeline-date::after {
+    right: -7px;
+}
+
+.timeline .timeline-box,
+.timeline .timeline-launch {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    background: #ffffff;
+}
+
+.timeline .timeline-launch {
+    width: 100%;
+    margin: 15px 0;
+    padding: 0;
+    border: none;
+    text-align: center;
+    background: transparent;
+}
+
+.timeline .timeline-box::after,
+.timeline .timeline-box::before {
+    content: '';
+    display: block;
+    position: absolute;
     width: 0;
     height: 0;
     border-style: solid;
 }
 
-.timeline ul li:nth-child(odd) div {
-    left: 45px;
+.timeline .row.timeline-left .timeline-box::after,
+.timeline .row.timeline-left .timeline-box::before {
+    left: 100%;
 }
 
-.timeline ul li:nth-child(odd) div::before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent #f45b69 transparent transparent;
+.timeline .row.timeline-right .timeline-box::after,
+.timeline .row.timeline-right .timeline-box::before {
+    right: 100%;
 }
 
-.timeline ul li:nth-child(even) div {
-    left: -439px;
+.timeline .timeline-launch .timeline-box::after,
+.timeline .timeline-launch .timeline-box::before {
+    left: 50%;
+    margin-left: -10px;
 }
 
-.timeline ul li:nth-child(even) div::before {
-    right: -15px;
-    border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent #f45b69;
+.timeline .timeline-box::after {
+    top: 26px;
+    border-color: transparent transparent transparent #ffffff;
+    border-width: 10px;
 }
 
-time {
-    display: block;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 8px;
+.timeline .timeline-box::before {
+    top: 25px;
+    border-color: transparent transparent transparent #dddddd;
+    border-width: 11px;
 }
 
-/* EFFECTS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.timeline ul li::after {
-    transition: background 0.5s ease-in-out;
+.timeline .row.timeline-right .timeline-box::after {
+    border-color: transparent #ffffff transparent transparent;
 }
 
-.timeline ul li.in-view::after {
-    background: #f45b69;
+.timeline .row.timeline-right .timeline-box::before {
+    border-color: transparent #dddddd transparent transparent;
 }
 
-.timeline ul li div {
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
+.timeline .timeline-launch .timeline-box::after {
+    top: -20px;
+    border-color: transparent transparent #dddddd transparent;
 }
 
-.timeline ul li:nth-child(odd) div {
-    transform: translate3d(200px, 0, 0);
+.timeline .timeline-launch .timeline-box::before {
+    top: -19px;
+    border-color: transparent transparent #ffffff transparent;
+    border-width: 10px;
+    z-index: 1;
 }
 
-.timeline ul li:nth-child(even) div {
-    transform: translate3d(-200px, 0, 0);
-}
-
-.timeline ul li.in-view div {
-    transform: none;
-    visibility: visible;
-    opacity: 1;
-}
-
-/* GENERAL MEDIA QUERIES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-@media screen and (max-width: 900px) {
-    .timeline ul li div {
-        width: 250px;
-    }
-    .timeline ul li:nth-child(even) div {
-        left: -289px;
-        /*250+45-6*/
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .timeline ul li {
-        margin-left: 20px;
-    }
-    .timeline ul li div {
-        width: calc(100vw - 91px);
-    }
-    .timeline ul li:nth-child(even) div {
-        left: 45px;
-    }
-    .timeline ul li:nth-child(even) div::before {
-        left: -15px;
-        border-width: 8px 16px 8px 0;
-        border-color: transparent #f45b69 transparent transparent;
-    }
-}
-
-/* EXTRA/CLIP PATH STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.timeline-clippy ul li::after {
+.timeline .timeline-box .timeline-icon {
+    position: relative;
     width: 40px;
-    height: 40px;
-    border-radius: 0;
+    height: auto;
+    float: left;
 }
 
-.timeline-rhombus ul li::after {
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+.timeline .timeline-icon i {
+    font-size: 25px;
+    color: #76C5FF;
 }
 
-.timeline-rhombus ul li div::before {
-    bottom: 12px;
+.timeline .timeline-box .timeline-text {
+    position: relative;
+    width: calc(100% - 40px);
+    float: left;
 }
 
-.timeline-star ul li::after {
-    clip-path: polygon( 50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+.timeline .timeline-launch .timeline-text {
+    width: 100%;
 }
 
-.timeline-heptagon ul li::after {
-    clip-path: polygon( 50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+.timeline .timeline-text h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 3px;
 }
 
-.timeline-infinite ul li::after {
-    animation: scaleAnimation 2s infinite;
+.timeline .timeline-text p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
 }
 
-@keyframes scaleAnimation {
-    0% {
-        transform: translateX(-50%) scale(1);
+@media (max-width: 768px) {
+    .timeline .timeline-continue::after {
+        left: 40px;
     }
-    50% {
-        transform: translateX(-50%) scale(1.25);
+    .timeline .timeline-end,
+    .timeline .timeline-start,
+    .timeline .timeline-year,
+    .timeline .row.timeline-left,
+    .timeline .row.timeline-right .timeline-date,
+    .timeline .row.timeline-right,
+    .timeline .row.timeline-left .timeline-date,
+    .timeline .timeline-launch {
+        text-align: left;
     }
-    100% {
-        transform: translateX(-50%) scale(1);
+    .timeline .row.timeline-left .timeline-date::after,
+    .timeline .row.timeline-right .timeline-date::after {
+        left: 47px;
+    }
+    .timeline .timeline-box,
+    .timeline .row.timeline-right .timeline-date,
+    .timeline .row.timeline-left .timeline-date {
+        margin-left: 55px;
+    }
+    .timeline .timeline-launch .timeline-box {
+        margin-left: 0;
+    }
+    .timeline .row.timeline-left .timeline-box::after {
+        left: -20px;
+        border-color: transparent #ffffff transparent transparent;
+    }
+    .timeline .row.timeline-left .timeline-box::before {
+        left: -22px;
+        border-color: transparent #dddddd transparent transparent;
+    }
+    .timeline .timeline-launch .timeline-box::after,
+    .timeline .timeline-launch .timeline-box::before {
+        left: 30px;
+        margin-left: 0;
     }
 }

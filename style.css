@@ -449,3 +449,31 @@ hr.colored {
         right: 400px;
     }
 }
+/*Faq section style*/
+
+.faq-wrapper {
+    margin: 0% 10%;
+}
+
+.img-fluid1 {
+    width: 15%;
+}
+
+.question-text {
+    margin-top: 25px;
+}
+
+@media (max-width:938px) {
+    .question-text {
+        margin-top: 10px;
+    }
+    .img-fluid1 {
+        width: 25%;
+    }
+}
+
+@media (max-width:400px) {
+    .faq-wrapper {
+        margin: 0%;
+    }
+}
