@@ -14,25 +14,45 @@ function menuClick(Id) {
 }
 
 //animation of round token
-$(document).ready(function() {
-  $(".tokenmics-card").mouseenter(function(){
-    $(".token-round").animate({left: '50%'},2000);
+$(document).ready(function () {
+  $(".tokenmics-card").mouseenter(function () {
+    $(".token-round").animate({ left: '50%' }, 2000);
   });
-  $(".tokenmics-card").mouseleave(function(){
-    $(".token-round").animate({left: "-20%"},1500);
+  $(".tokenmics-card").mouseleave(function () {
+    $(".token-round").animate({ left: "-20%" }, 1500);
   });
 });
 
+// Timeline
+(function () {
+  "use strict";
 
-// $(window).resize(function() {
-//   // This will execute whenever the window is resized
-//   let width=$(window).width(); // New height
-//   if(width<=1121)
-//   {
-//     $('#tokenmics-card').addClass('col-12').removeClass('col-7');
-//   }
-//   else
-//   {
-//     $('#tokenmics-card').removeClass('col-7').addClass('col-12');
-//   }
-// });
+  // define variables
+  var items = document.querySelectorAll(".timeline li");
+
+
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function callbackFunc() {
+    for (var i = 0; i < items.length; i++) {
+      if (isElementInViewport(items[i])) {
+        items[i].classList.add("in-view");
+      }
+    }
+  }
+
+  // listen for events
+  window.addEventListener("load", callbackFunc);
+  window.addEventListener("resize", callbackFunc);
+  window.addEventListener("scroll", callbackFunc);
+})();
+// Timeline End
