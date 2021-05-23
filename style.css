@@ -200,10 +200,19 @@ hr.colored {
 .team-image {
     width: 70%;
     max-width: 250px;
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 /* Team section end */
+
+/* Video Player */
+
+.video-wrap {
+    width: 100%;
+    height: auto;
+}
+
+/* Video Player End */
 
 /* Footer */
 
@@ -279,6 +288,11 @@ hr.colored {
 }
 
 @media only screen and (max-width: 1110px) {
+    .team-card {
+        min-width: 170px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
     /* Custom card */
     .custom-card-wrap {
         grid-template-areas: 'titleGroup' 'cardImage' 'cardDescription';
