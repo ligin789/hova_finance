@@ -568,7 +568,7 @@ hr.colored {
 }
 
 .img-fluid1 {
-    width: 15%;
+    min-width: 15%;
 }
 
 .question-text {
@@ -596,6 +596,8 @@ hr.colored {
 @media (max-width: 400px) {
     .faq-wrapper {
         margin: 0%;
+        width: 100%;
+        overflow-wrap: break-word;
     }
     .answer {
         max-width: 90%;
