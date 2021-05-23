@@ -123,6 +123,7 @@ hr.colored {
     /* W3C */
 }
 
+
 /* Custom card */
 
 .custom-card-wrap {
@@ -173,7 +174,9 @@ hr.colored {
     width: 400px;
 }
 
+
 /* Custom card End */
+
 
 /* Team section */
 
@@ -203,7 +206,9 @@ hr.colored {
     padding: 10px;
 }
 
+
 /* Team section end */
+
 
 /* Video Player */
 
@@ -212,7 +217,9 @@ hr.colored {
     height: auto;
 }
 
+
 /* Video Player End */
+
 
 /* Footer */
 
@@ -267,6 +274,7 @@ hr.colored {
     text-align: center;
     color: var(--DarkBlue);
 }
+
 
 /* Footer End */
 
@@ -412,6 +420,7 @@ hr.colored {
     }
 }
 
+
 /* New style*/
 
 .dot-img1 {
@@ -551,6 +560,7 @@ hr.colored {
     }
 }
 
+
 /*Faq section style*/
 
 .faq-wrapper {
@@ -558,7 +568,7 @@ hr.colored {
 }
 
 .img-fluid1 {
-    max-width: 15%;
+    width: 15%;
 }
 
 .question-text {
@@ -593,6 +603,10 @@ hr.colored {
     .question {
         max-width: 90%;
     }
+    .img-fluid1 {
+        width: 25%;
+    }
 }
+
 
 /* FAQ End */
