@@ -6,9 +6,9 @@
 }
 
 :root {
-    --DarkBlue: #002B5D;
-    --LightBlue: #76C5FF;
-    --MediumBlue: #094B98;
+    --DarkBlue: #002b5d;
+    --LightBlue: #76c5ff;
+    --MediumBlue: #094b98;
 }
 
 body {
@@ -95,7 +95,7 @@ body {
 }
 
 .value-group {
-    background-color: #EBF9FF;
+    background-color: #ebf9ff;
     margin: 10px;
     border-radius: 8px;
     padding: 5px 10px;
@@ -111,15 +111,15 @@ hr.colored {
     border-radius: 3px;
     height: 7px;
     /* in order to override TWBS stylesheet */
-    background: -moz-linear-gradient(left, var(--LightBlue) 50%, #EBF9FF 50%);
+    background: -moz-linear-gradient(left, var(--LightBlue) 50%, #ebf9ff 50%);
     /* FF3.6+ */
-    background: -webkit-linear-gradient(left, var(--LightBlue) 50%, #EBF9FF 50%);
+    background: -webkit-linear-gradient(left, var(--LightBlue) 50%, #ebf9ff 50%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, var(--LightBlue) 50%, #EBF9FF 50%);
+    background: -o-linear-gradient(left, var(--LightBlue) 50%, #ebf9ff 50%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, var(--LightBlue) 50%, #EBF9FF 50%);
+    background: -ms-linear-gradient(left, var(--LightBlue) 50%, #ebf9ff 50%);
     /* IE10+ */
-    background: linear-gradient(to right, var(--LightBlue) 50%, #EBF9FF 50%);
+    background: linear-gradient(to right, var(--LightBlue) 50%, #ebf9ff 50%);
     /* W3C */
 }
 
@@ -130,7 +130,7 @@ hr.colored {
     width: 70%;
     margin: 0px auto 120px auto;
     display: grid;
-    grid-template-areas: 'titleGroup cardImage' 'cardDescription cardImage';
+    grid-template-areas: "titleGroup cardImage" "cardDescription cardImage";
     grid-template-rows: 120px auto;
 }
 
@@ -138,7 +138,7 @@ hr.colored {
     width: 70%;
     margin: 0px auto 120px auto;
     display: grid;
-    grid-template-areas: 'cardImage titleGroup' 'cardImage cardDescription';
+    grid-template-areas: "cardImage titleGroup" "cardImage cardDescription";
     grid-template-rows: 120px auto;
 }
 
@@ -211,10 +211,10 @@ hr.colored {
 @media only screen and (max-width: 1110px) {
     /* Custom card */
     .custom-card-wrap {
-        grid-template-areas: 'titleGroup' 'cardImage' 'cardDescription';
+        grid-template-areas: "titleGroup" "cardImage" "cardDescription";
     }
     .custom-card-wrap-two {
-        grid-template-areas: 'titleGroup' 'cardImage' 'cardDescription';
+        grid-template-areas: "titleGroup" "cardImage" "cardDescription";
     }
     .custom-card-image-left {
         float: right;
@@ -250,11 +250,11 @@ hr.colored {
     /* Custom card */
     .custom-card-wrap {
         width: 80%;
-        grid-template-areas: 'titleGroup' 'cardImage' 'cardDescription';
+        grid-template-areas: "titleGroup" "cardImage" "cardDescription";
     }
     .custom-card-wrap-two {
         width: 80%;
-        grid-template-areas: 'titleGroup' 'cardImage' 'cardDescription';
+        grid-template-areas: "titleGroup" "cardImage" "cardDescription";
     }
     .custom-card-number {
         width: 50px;
@@ -292,7 +292,7 @@ hr.colored {
     /* Team section end */
 }
 
-@media (max-width:2000px) and (min-width:1700px) {
+@media (max-width: 2000px) and (min-width: 1700px) {
     .nav-item {
         margin: 0px 2vw;
     }
@@ -305,7 +305,7 @@ hr.colored {
     }
 }
 
-@media (max-width:1700px) and (min-width:1400px) {
+@media (max-width: 1700px) and (min-width: 1400px) {
     .hero-text {
         margin-left: 100px;
         margin-top: 70px;
@@ -415,7 +415,7 @@ hr.colored {
     left: -200px;
 }
 
-@media (max-width:640px) {
+@media (max-width: 640px) {
     .dot-img3 {
         display: none;
     }
@@ -427,7 +427,7 @@ hr.colored {
     }
 }
 
-@media (max-width:1124px) {
+@media (max-width: 1124px) {
     .token-round {
         display: none;
     }
@@ -443,7 +443,7 @@ hr.colored {
     }
 }
 
-@media (min-width:1440px) {
+@media (min-width: 1440px) {
     .dot-img2 {
         left: 400px;
     }
@@ -470,7 +470,16 @@ hr.colored {
     margin-top: 25px;
 }
 
-@media (max-width:938px) {
+.question-answer-wrapper {
+    margin-bottom: 50px;
+}
+
+.question {
+    color: var(--DarkBlue);
+    font-weight: bold;
+}
+
+@media (max-width: 938px) {
     .question-text {
         margin-top: 10px;
     }
@@ -479,7 +488,7 @@ hr.colored {
     }
 }
 
-@media (max-width:400px) {
+@media (max-width: 400px) {
     .faq-wrapper {
         margin: 0%;
     }
