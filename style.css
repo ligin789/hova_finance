@@ -479,6 +479,16 @@ hr.colored {
     opacity: 0.5;
 }
 
+.dot-img8 {
+    position: absolute;
+    z-index: 0;
+    right: -200px;
+    top: 6px;
+    z-index: 2;
+    overflow: hidden;
+    opacity: 0.5;
+}
+
 .tokenomics-main-wrapper {
     display: flex;
     flex-flow: wrap;
