@@ -482,11 +482,38 @@ hr.colored {
 .dot-img8 {
     position: absolute;
     z-index: 0;
-    right: -200px;
-    top: 6px;
-    z-index: 2;
+    right: 0px;
+    top: 100rem;
+    z-index: 0;
     overflow: hidden;
-    opacity: 0.5;
+}
+
+.dot-img9 {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 150rem;
+    z-index: 0;
+    overflow: hidden;
+    transform: rotate(180deg);
+}
+
+.dot-img10 {
+    position: absolute;
+    z-index: 0;
+    right: -180px;
+    top: 6px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.dot-img11 {
+    position: absolute;
+    z-index: 0;
+    right: -180px;
+    top: 6px;
+    z-index: 0;
+    overflow: hidden;
 }
 
 .tokenomics-main-wrapper {
@@ -538,6 +565,12 @@ hr.colored {
         display: none;
     }
     .dot-img2 {
+        display: none;
+    }
+    .dot-img8 {
+        display: none;
+    }
+    .dot-img10 {
         display: none;
     }
 }
