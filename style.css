@@ -606,52 +606,40 @@ hr.colored {
 
 /*Faq section style*/
 
-.faq-wrapper {
-    margin: 0% 10%;
+.question {
+    color: var(--DarkBlue);
+    font-weight: bold;
 }
 
 .img-fluid1 {
     min-width: 15%;
 }
 
-.question-text {
-    margin-top: 25px;
+.faq-wrapper {
+    margin: 0% 10%;
 }
 
-.question-answer-wrapper {
-    margin-bottom: 50px;
-}
-
-.question {
-    color: var(--DarkBlue);
-    font-weight: bold;
+.accordion-wrapper {
+    background-color: #fff;
+    text-decoration: none;
 }
 
 @media (max-width: 938px) {
-    .question-text {
-        margin-top: 10px;
-    }
     .img-fluid1 {
         width: 25%;
     }
+    .question {
+        padding: 0;
+    }
+}
+
+.faq-wrapper {
+    margin: 0;
 }
 
 @media (max-width: 400px) {
-    .faq-wrapper {
-        margin: 0%;
-        width: 100%;
-        overflow-wrap: break-word;
-    }
-    .answer {
-        max-width: 90%;
-    }
-    .question {
-        max-width: 90%;
-    }
     .img-fluid1 {
         min-width: 25%;
+        padding: 0;
     }
 }
-
-
-/* FAQ End */
