@@ -49,6 +49,12 @@ body {
     white-space: nowrap;
 }
 
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #fff;
+}
+
 .nav-item {
     margin: 0px 1vw;
 }
