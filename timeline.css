@@ -9,21 +9,25 @@
     width: 100%;
 }
 
-.timeline .timeline-end, .timeline .timeline-start, .timeline .timeline-year {
+.timeline .timeline-end,
+.timeline .timeline-start,
+.timeline .timeline-year {
     position: relative;
     width: 100%;
     text-align: center;
     z-index: 1;
 }
 
-.timeline .timeline-end p, .timeline .timeline-start p, .timeline .timeline-year p {
+.timeline .timeline-end p,
+.timeline .timeline-start p,
+.timeline .timeline-year p {
     display: inline-block;
     width: 80px;
     height: 80px;
     margin: 0;
     padding: 30px 0;
     text-align: center;
-    background: linear-gradient(#76C5FF, #76C5FF);
+    background: linear-gradient(#2DBDFF, #2DBDFF);
     border-radius: 100px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .4);
     color: #ffffff;
@@ -49,14 +53,16 @@
     top: 0;
     left: 50%;
     margin-left: -1px;
-    background: #76C5FF;
+    background: #2DBDFF;
 }
 
-.timeline .row.timeline-left, .timeline .row.timeline-right .timeline-date {
+.timeline .row.timeline-left,
+.timeline .row.timeline-right .timeline-date {
     text-align: right;
 }
 
-.timeline .row.timeline-right, .timeline .row.timeline-left .timeline-date {
+.timeline .row.timeline-right,
+.timeline .row.timeline-left .timeline-date {
     text-align: left;
 }
 
@@ -73,7 +79,7 @@
     width: 14px;
     height: 14px;
     top: 45px;
-    background: linear-gradient(#76C5FF, #76C5FF);
+    background: linear-gradient(#2DBDFF, #2DBDFF);
     box-shadow: 0 0 5px rgba(0, 0, 0, .4);
     border-radius: 15px;
     z-index: 1;
@@ -87,7 +93,8 @@
     right: -7px;
 }
 
-.timeline .timeline-box, .timeline .timeline-launch {
+.timeline .timeline-box,
+.timeline .timeline-launch {
     position: relative;
     display: inline-block;
     margin: 15px;
@@ -106,7 +113,8 @@
     background: transparent;
 }
 
-.timeline .timeline-box::after, .timeline .timeline-box::before {
+.timeline .timeline-box::after,
+.timeline .timeline-box::before {
     content: '';
     display: block;
     position: absolute;
@@ -115,15 +123,18 @@
     border-style: solid;
 }
 
-.timeline .row.timeline-left .timeline-box::after, .timeline .row.timeline-left .timeline-box::before {
+.timeline .row.timeline-left .timeline-box::after,
+.timeline .row.timeline-left .timeline-box::before {
     left: 100%;
 }
 
-.timeline .row.timeline-right .timeline-box::after, .timeline .row.timeline-right .timeline-box::before {
+.timeline .row.timeline-right .timeline-box::after,
+.timeline .row.timeline-right .timeline-box::before {
     right: 100%;
 }
 
-.timeline .timeline-launch .timeline-box::after, .timeline .timeline-launch .timeline-box::before {
+.timeline .timeline-launch .timeline-box::after,
+.timeline .timeline-launch .timeline-box::before {
     left: 50%;
     margin-left: -10px;
 }
@@ -169,7 +180,7 @@
 
 .timeline .timeline-icon i {
     font-size: 25px;
-    color: #76C5FF;
+    color: #2DBDFF;
 }
 
 .timeline .timeline-box .timeline-text {
@@ -198,13 +209,23 @@
     .timeline .timeline-continue::after {
         left: 40px;
     }
-    .timeline .timeline-end, .timeline .timeline-start, .timeline .timeline-year, .timeline .row.timeline-left, .timeline .row.timeline-right .timeline-date, .timeline .row.timeline-right, .timeline .row.timeline-left .timeline-date, .timeline .timeline-launch {
+    .timeline .timeline-end,
+    .timeline .timeline-start,
+    .timeline .timeline-year,
+    .timeline .row.timeline-left,
+    .timeline .row.timeline-right .timeline-date,
+    .timeline .row.timeline-right,
+    .timeline .row.timeline-left .timeline-date,
+    .timeline .timeline-launch {
         text-align: left;
     }
-    .timeline .row.timeline-left .timeline-date::after, .timeline .row.timeline-right .timeline-date::after {
+    .timeline .row.timeline-left .timeline-date::after,
+    .timeline .row.timeline-right .timeline-date::after {
         left: 47px;
     }
-    .timeline .timeline-box, .timeline .row.timeline-right .timeline-date, .timeline .row.timeline-left .timeline-date {
+    .timeline .timeline-box,
+    .timeline .row.timeline-right .timeline-date,
+    .timeline .row.timeline-left .timeline-date {
         margin-left: 55px;
     }
     .timeline .timeline-launch .timeline-box {
@@ -218,7 +239,8 @@
         left: -22px;
         border-color: transparent #dddddd transparent transparent;
     }
-    .timeline .timeline-launch .timeline-box::after, .timeline .timeline-launch .timeline-box::before {
+    .timeline .timeline-launch .timeline-box::after,
+    .timeline .timeline-launch .timeline-box::before {
         left: 30px;
         margin-left: 0;
     }
