@@ -123,6 +123,7 @@ hr.colored {
     /* W3C */
 }
 
+
 /* Custom card */
 
 .custom-card-wrap {
@@ -173,7 +174,9 @@ hr.colored {
     width: 400px;
 }
 
+
 /* Custom card End */
+
 
 /* Team section */
 
@@ -203,7 +206,9 @@ hr.colored {
     padding: 10px;
 }
 
+
 /* Team section end */
+
 
 /* Video Player */
 
@@ -212,7 +217,9 @@ hr.colored {
     height: auto;
 }
 
+
 /* Video Player End */
+
 
 /* Listed on */
 
@@ -231,7 +238,9 @@ hr.colored {
     padding: 10px;
 }
 
+
 /* Listed on End */
+
 
 /* Footer */
 
@@ -286,6 +295,7 @@ hr.colored {
     text-align: center;
     color: var(--DarkBlue);
 }
+
 
 /* Footer End */
 
@@ -443,6 +453,7 @@ hr.colored {
         font-size: 38px;
     }
 }
+
 
 /* New style*/
 
@@ -626,6 +637,7 @@ hr.colored {
     }
 }
 
+
 /*Faq section style*/
 
 .faq-wrapper {
@@ -638,6 +650,7 @@ hr.colored {
 
 .question-text {
     margin-top: 25px;
+    text-decoration: none;
 }
 
 .question-answer-wrapper {
@@ -647,6 +660,12 @@ hr.colored {
 .question {
     color: var(--DarkBlue);
     font-weight: bold;
+}
+
+.accordion-wrapper {
+    background-color: #fff;
+    text-decoration: none;
+    border: none
 }
 
 @media (max-width: 938px) {
@@ -674,5 +693,6 @@ hr.colored {
         min-width: 25%;
     }
 }
+
 
 /* FAQ End */
