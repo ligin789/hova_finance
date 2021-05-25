@@ -217,6 +217,10 @@ hr.colored {
     height: auto;
 }
 
+.color-dark {
+    color: var(--DarkBlue);
+}
+
 
 /* Video Player End */
 

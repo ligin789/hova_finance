@@ -67,9 +67,9 @@
 }
 
 .timeline .timeline-date {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
-    margin: 41px 0 0 0;
+    margin: 38px 0 0 0;
 }
 
 .timeline .timeline-date::after {
@@ -91,6 +91,10 @@
 
 .timeline .row.timeline-right .timeline-date::after {
     right: -7px;
+}
+
+.timeline-box {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .timeline .timeline-box,
