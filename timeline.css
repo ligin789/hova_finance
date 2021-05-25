@@ -29,7 +29,6 @@
     text-align: center;
     background: linear-gradient(#2DBDFF, #2DBDFF);
     border-radius: 100px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
     color: #ffffff;
     font-size: 14px;
     text-transform: uppercase;
@@ -80,7 +79,6 @@
     height: 14px;
     top: 45px;
     background: linear-gradient(#2DBDFF, #2DBDFF);
-    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
     border-radius: 15px;
     z-index: 1;
 }
