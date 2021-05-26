@@ -11,6 +11,14 @@
     --MediumBlue: #094b98;
 }
 
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    display: none;
+}
+
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -657,6 +665,10 @@ hr.colored {
 .img-fluid1 {
     width: 120px;
     margin-top: 15px;
+}
+
+.answer {
+    color: var(--DarkBlue);
 }
 
 .question-text {
