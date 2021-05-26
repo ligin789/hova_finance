@@ -650,15 +650,17 @@ hr.colored {
 /*Faq section style*/
 
 .faq-wrapper {
-    margin: 0% 10%;
+    width: 80%;
+    margin: 0px auto;
 }
 
 .img-fluid1 {
-    min-width: 15%;
+    width: 120px;
+    margin-top: 15px;
 }
 
 .question-text {
-    margin-top: 25px;
+    margin: auto 0px;
     text-decoration: none;
 }
 
@@ -677,15 +679,6 @@ hr.colored {
     border: none
 }
 
-@media (max-width: 938px) {
-    .question-text {
-        margin-top: 10px;
-    }
-    .img-fluid1 {
-        width: 25%;
-    }
-}
-
 @media (max-width: 400px) {
     .faq-wrapper {
         margin: 0%;
@@ -694,12 +687,14 @@ hr.colored {
     }
     .answer {
         max-width: 90%;
+        font-size: 14px;
     }
     .question {
         max-width: 90%;
+        font-size: 14px;
     }
     .img-fluid1 {
-        min-width: 25%;
+        min-width: 100px;
     }
 }
 
