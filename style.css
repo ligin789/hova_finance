@@ -246,6 +246,7 @@ hr.colored {
 
 .video-wrap {
     width: 100%;
+    min-height: 30vw;
     height: auto;
 }
 
