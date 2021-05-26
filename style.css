@@ -185,7 +185,7 @@ hr.colored {
 }
 
 .custom-card-title {
-    transform: translate(60px, -100px);
+    transform: translate(50px, -100px);
     font-size: 27px;
     font-weight: 600;
     color: var(--DarkBlue);
@@ -205,7 +205,7 @@ hr.colored {
 }
 
 .custom-card-description {
-    transform: translate(60px, 0px);
+    transform: translate(50px, 0px);
     width: 400px;
 }
 
@@ -588,6 +588,10 @@ hr.colored {
     top: 6px;
     z-index: 0;
     overflow: hidden;
+}
+
+#TokenmicsSection {
+    margin-top: 150px;
 }
 
 .tokenomics-main-wrapper {
