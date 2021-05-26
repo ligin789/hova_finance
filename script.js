@@ -64,6 +64,7 @@ let mybutton = document.getElementById("btn-back-to-top");
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
   scrollFunction();
+  stickfunction();
 };
 
 function scrollFunction() {
@@ -82,4 +83,16 @@ mybutton.addEventListener("click", backToTop);
 function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+//scroll nav
+var header = document.getElementById("navbar-wrapper");
+
+function stickfunction() {
+  if (window.pageYOffset > 10) {
+    header.classList.add("header-nav");
+  }
+  else {
+    header.classList.remove("header-nav");
+  }
 }
