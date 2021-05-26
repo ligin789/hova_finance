@@ -131,6 +131,7 @@ hr.colored {
 /* Custom card */
 
 .custom-card-wrap {
+    overflow: hidden;
     width: 70%;
     margin: 0px auto 120px auto;
     display: grid;
