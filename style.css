@@ -185,6 +185,7 @@ hr.colored {
 
 .team-wrap {
     width: 70%;
+    justify-content: center;
 }
 
 .team-card {
@@ -227,7 +228,7 @@ hr.colored {
 /* Listed on */
 
 .listed-on-card {
-    max-width: 290px;
+    max-width: 280px;
     min-height: 90px;
     border-radius: 8px;
     text-align: center;
@@ -318,10 +319,10 @@ hr.colored {
     /* Footer End */
 }
 
-@media only screen and (min-width: 1110px) {
+@media only screen and (min-width: 1770px) {
     /* Listed on */
     .listed-on-card {
-        max-width: 400px;
+        max-width: 20vw;
         margin: 15px 20px;
     }
     /* Listed on End */
@@ -398,7 +399,6 @@ hr.colored {
     /* Team section */
     .team-wrap {
         width: 90%;
-        justify-content: center;
     }
     .team-card {
         min-width: 161px;
