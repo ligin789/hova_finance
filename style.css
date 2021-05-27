@@ -141,7 +141,7 @@ body {
 }
 
 hr.colored {
-    width: 15vw;
+    width: 20vw;
     min-width: 180px;
     border: 0;
     border-radius: 3px;
@@ -157,6 +157,10 @@ hr.colored {
     /* IE10+ */
     background: linear-gradient(to right, var(--LightBlue) 50%, #ebf9ff 50%);
     /* W3C */
+}
+
+.section-title {
+    font-size: 28px;
 }
 
 
@@ -287,10 +291,33 @@ hr.colored {
 /* Listed on End */
 
 
+/* Legal Section */
+
+.legal-card-wrap {
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+.legal-card-head {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--DarkBlue);
+    justify-content: space-between;
+}
+
+.legal-card-head i {
+    font-size: 20px;
+}
+
+
+/* Legal Section End */
+
+
 /* Footer */
 
 .wrap {
     width: 100%;
+    margin-top: 150px;
     display: flex;
     justify-content: flex-end;
 }
@@ -394,6 +421,9 @@ hr.colored {
 }
 
 @media only screen and (max-width: 600px) {
+    .section-title {
+        font-size: 20px;
+    }
     .section-wrap {
         margin-top: 10px;
         padding: 10px 20px;
@@ -455,6 +485,7 @@ hr.colored {
         width: 100%;
         padding: 10px 0px;
     }
+    /* Team section end */
     /* Listed on */
     .listed-on-card {
         width: 100%;
@@ -463,7 +494,17 @@ hr.colored {
         width: 70%;
     }
     /* Listed on End */
-    /* Team section end */
+    /* Legal Section */
+    .legal-card-wrap {
+        padding: 10px 20px;
+    }
+    .legal-card-head {
+        font-size: 18px;
+    }
+    .legal-card-head i {
+        font-size: 15px;
+    }
+    /* Legal Section End */
     /* Footer */
     .footer-description {
         font-size: 15px;
@@ -698,7 +739,7 @@ hr.colored {
 /*Faq section style*/
 
 .faq-wrapper {
-    width: 80%;
+    width: 73%;
     margin: 0px auto;
 }
 
