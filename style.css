@@ -79,7 +79,8 @@ body {
     white-space: nowrap;
 }
 
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem #fff;
 }
@@ -158,6 +159,7 @@ hr.colored {
     /* W3C */
 }
 
+
 /* Custom card */
 
 .custom-card-wrap {
@@ -209,7 +211,9 @@ hr.colored {
     width: 400px;
 }
 
+
 /* Custom card End */
+
 
 /* Team section */
 
@@ -240,7 +244,9 @@ hr.colored {
     padding: 10px;
 }
 
+
 /* Team section end */
+
 
 /* Video Player */
 
@@ -254,7 +260,9 @@ hr.colored {
     color: var(--DarkBlue);
 }
 
+
 /* Video Player End */
+
 
 /* Listed on */
 
@@ -275,7 +283,9 @@ hr.colored {
     padding: 10px;
 }
 
+
 /* Listed on End */
+
 
 /* Footer */
 
@@ -330,6 +340,7 @@ hr.colored {
     text-align: center;
     color: var(--DarkBlue);
 }
+
 
 /* Footer End */
 
@@ -495,6 +506,7 @@ hr.colored {
         font-size: 38px;
     }
 }
+
 
 /* New style*/
 
@@ -682,6 +694,7 @@ hr.colored {
     }
 }
 
+
 /*Faq section style*/
 
 .faq-wrapper {
@@ -737,4 +750,44 @@ hr.colored {
     }
 }
 
+
 /* FAQ End */
+
+
+/*Crypto to home style*/
+
+.dot2-img1 {
+    position: absolute;
+    left: 10px;
+    top: -35px;
+}
+
+.dot2-img2 {
+    position: absolute;
+    right: 0px;
+    top: 350px;
+    z-index: -1;
+}
+
+.dot2-img3 {
+    position: absolute;
+    left: 0px;
+    top: 50rem;
+    z-index: -1;
+}
+
+.dot2-img4 {
+    position: absolute;
+    right: 15px;
+    bottom: -30px;
+    z-index: -1;
+}
+
+@media (max-width: 360px) {
+    .dot2-img2 {
+        display: none;
+    }
+    .dot2-img3 {
+        display: none;
+    }
+}
