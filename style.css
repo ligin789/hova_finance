@@ -305,6 +305,7 @@ hr.colored {
     font-size: 18px;
     font-weight: 600;
     color: var(--DarkBlue);
+    cursor: pointer;
     justify-content: space-between;
 }
 
