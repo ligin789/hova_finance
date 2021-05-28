@@ -281,25 +281,40 @@ hr.colored {
 
 /* Listed on End */
 
-/* Legal Section */
+/*Faq section*/
 
-.legal-card-wrap {
+.faq-wrapper {
+    width: 73%;
+    margin: 0px auto;
+}
+
+@media (max-width: 400px) {
+    .faq-wrapper {
+        margin: 0%;
+        width: 100%;
+        overflow-wrap: break-word;
+    }
+}
+
+.faq-card-wrap {
     padding: 20px 40px;
     border-radius: 8px;
 }
 
-.legal-card-head {
-    font-size: 20px;
+.faq-card-head {
+    font-size: 18px;
     font-weight: 600;
     color: var(--DarkBlue);
     justify-content: space-between;
 }
 
-.legal-card-head i {
+.faq-card-arrow {
     font-size: 20px;
+    min-width: 50px;
+    height: 40px;
 }
 
-/* Legal Section End */
+/* FAQ End */
 
 /* Footer */
 
@@ -481,17 +496,21 @@ hr.colored {
         width: 70%;
     }
     /* Listed on End */
-    /* Legal Section */
-    .legal-card-wrap {
+    /* FAQ Section  */
+    .faq-card-wrap {
         padding: 10px 20px;
     }
-    .legal-card-head {
-        font-size: 18px;
-    }
-    .legal-card-head i {
+    .faq-card-head {
         font-size: 15px;
     }
-    /* Legal Section End */
+    .faq-card-arrow {
+        font-size: 15px;
+        height: 35px;
+    }
+    .faq-card-body {
+        font-size: 14px;
+    }
+    /* FAQ Section End */
     /* Footer */
     .footer-description {
         font-size: 15px;
@@ -720,63 +739,6 @@ hr.colored {
         right: 400px;
     }
 }
-
-/*Faq section style*/
-
-.faq-wrapper {
-    width: 73%;
-    margin: 0px auto;
-}
-
-.img-fluid1 {
-    width: 120px;
-    margin-top: 15px;
-}
-
-.answer {
-    color: var(--DarkBlue);
-}
-
-.question-text {
-    margin: auto 0px;
-    text-decoration: none;
-}
-
-.question-answer-wrapper {
-    margin-bottom: 50px;
-}
-
-.question {
-    color: var(--DarkBlue);
-    font-weight: bold;
-}
-
-.accordion-wrapper {
-    background-color: #fff;
-    text-decoration: none;
-    border: none
-}
-
-@media (max-width: 400px) {
-    .faq-wrapper {
-        margin: 0%;
-        width: 100%;
-        overflow-wrap: break-word;
-    }
-    .answer {
-        max-width: 90%;
-        font-size: 14px;
-    }
-    .question {
-        max-width: 90%;
-        font-size: 14px;
-    }
-    .img-fluid1 {
-        min-width: 100px;
-    }
-}
-
-/* FAQ End */
 
 /*Crypto to home style*/
 
