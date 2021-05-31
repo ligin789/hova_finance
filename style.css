@@ -79,7 +79,8 @@ body {
     white-space: nowrap;
 }
 
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem #fff;
 }
@@ -162,6 +163,7 @@ hr.colored {
     font-size: 28px;
 }
 
+
 /* Custom card */
 
 .custom-card-wrap {
@@ -213,7 +215,9 @@ hr.colored {
     width: 400px;
 }
 
+
 /* Custom card End */
+
 
 /* Team section */
 
@@ -244,7 +248,9 @@ hr.colored {
     padding: 10px;
 }
 
+
 /* Team section end */
+
 
 /* Video Player */
 
@@ -258,7 +264,9 @@ hr.colored {
     color: var(--DarkBlue);
 }
 
+
 /* Video Player End */
+
 
 /* Listed on */
 
@@ -279,7 +287,9 @@ hr.colored {
     padding: 10px;
 }
 
+
 /* Listed on End */
+
 
 /*Faq section*/
 
@@ -315,7 +325,9 @@ hr.colored {
     height: 40px;
 }
 
+
 /* FAQ End */
+
 
 /* Footer */
 
@@ -371,6 +383,7 @@ hr.colored {
     text-align: center;
     color: var(--DarkBlue);
 }
+
 
 /* Footer End */
 
@@ -554,6 +567,7 @@ hr.colored {
         font-size: 38px;
     }
 }
+
 
 /* New style*/
 
@@ -741,6 +755,7 @@ hr.colored {
     }
 }
 
+
 /*Crypto to home style*/
 
 .dot2-img1 {
@@ -776,5 +791,28 @@ hr.colored {
     }
     .dot2-img3 {
         display: none;
+    }
+}
+
+#text-crypto-wrapper {
+    display: grid;
+    grid-template-areas: 'text-crypto-title text-crypto-title' 'text-crypto-description text-crypto-img';
+}
+
+#text-crypto-img {
+    grid-area: text-crypto-img;
+}
+
+#text-crypto-description {
+    grid-area: text-crypto-description;
+}
+
+#text-crypto-title {
+    grid-area: text-crypto-title;
+}
+
+@media (max-width: 1016px) {
+    #text-crypto-wrapper {
+        grid-template-areas: 'text-crypto-title' 'text-crypto-img' 'text-crypto-description';
     }
 }
