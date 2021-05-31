@@ -238,7 +238,7 @@ hr.colored {
     font-weight: 500;
 }
 
-.team-img-wrap {
+.team-image-wrap {
     background-image: url('../images/Team Loading Cards.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -493,8 +493,7 @@ hr.colored {
         font-size: 12px;
     }
     .team-image {
-        transform: translateY(-20px);
-        width: 85%;
+        width: 100%;
         padding: 10px 0px;
     }
     /* Team section end */
