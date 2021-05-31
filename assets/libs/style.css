@@ -209,7 +209,7 @@ hr.colored {
 }
 
 .custom-card-description {
-    transform: translate(50px, 0px);
+    transform: translate(50px, -17px);
     width: 400px;
 }
 
@@ -253,6 +253,21 @@ hr.colored {
 }
 
 /* Team section end */
+
+@media (max-width:768px) {
+    /* Team section */
+    .team-wrap {
+        width: 90%;
+        justify-content: center;
+    }
+    .team-image {
+        transform: translateY(-15px);
+        width: 80%;
+        max-width: 250px;
+        padding: 10px;
+    }
+    /* Team section end */
+}
 
 /* Video Player */
 
