@@ -229,11 +229,13 @@ hr.colored {
 }
 
 .team-name {
+    transform: translateY(-25px);
     font-size: 15px;
     font-weight: 600;
 }
 
 .team-position {
+    transform: translateY(-25px);
     font-size: 14px;
     font-weight: 500;
 }
