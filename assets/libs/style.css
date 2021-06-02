@@ -79,7 +79,8 @@ body {
     white-space: nowrap;
 }
 
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem #fff;
 }
@@ -162,6 +163,7 @@ hr.colored {
     font-size: 28px;
 }
 
+
 /* Custom card */
 
 .custom-card-wrap {
@@ -213,7 +215,9 @@ hr.colored {
     width: 400px;
 }
 
+
 /* Custom card End */
+
 
 /* Team section */
 
@@ -282,6 +286,7 @@ hr.colored {
     padding: 10px;
 }
 
+
 /* Team section end */
 
 @media (max-width:786px) {
@@ -292,6 +297,7 @@ hr.colored {
     }
     /* Team section end */
 }
+
 
 /* Video Player */
 
@@ -305,7 +311,9 @@ hr.colored {
     color: var(--DarkBlue);
 }
 
+
 /* Video Player End */
+
 
 /* Listed on */
 
@@ -326,7 +334,9 @@ hr.colored {
     padding: 10px;
 }
 
+
 /* Listed on End */
+
 
 /*Faq section*/
 
@@ -362,7 +372,9 @@ hr.colored {
     height: 40px;
 }
 
+
 /* FAQ End */
+
 
 /* Footer */
 
@@ -418,6 +430,7 @@ hr.colored {
     text-align: center;
     color: var(--DarkBlue);
 }
+
 
 /* Footer End */
 
@@ -607,6 +620,7 @@ hr.colored {
     }
 }
 
+
 /* New style*/
 
 .dot-img1 {
@@ -792,6 +806,7 @@ hr.colored {
         right: 400px;
     }
 }
+
 
 /*Crypto to home style*/
 
