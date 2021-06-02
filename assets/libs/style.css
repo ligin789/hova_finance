@@ -79,8 +79,7 @@ body {
     white-space: nowrap;
 }
 
-.btn.focus,
-.btn:focus {
+.btn.focus, .btn:focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem #fff;
 }
@@ -163,7 +162,6 @@ hr.colored {
     font-size: 28px;
 }
 
-
 /* Custom card */
 
 .custom-card-wrap {
@@ -215,11 +213,47 @@ hr.colored {
     width: 400px;
 }
 
-
 /* Custom card End */
 
-
 /* Team section */
+
+.team-img-contain {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 72%;
+    margin-top: -11px;
+    height: 73%;
+    background: rgba(0, 0, 0, 0);
+}
+
+.team-img-contain:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+}
+
+.button-social {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    /*  */
+    padding: 10px 20px;
+    color: white;
+    border: solid 2px white;
+    z-index: 1;
+}
+
+.team-img-contain:hover .button-social {
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+}
 
 .team-wrap {
     width: 70%;
@@ -250,7 +284,6 @@ hr.colored {
     padding: 10px;
 }
 
-
 /* Team section end */
 
 @media (max-width:786px) {
@@ -261,7 +294,6 @@ hr.colored {
     }
     /* Team section end */
 }
-
 
 /* Video Player */
 
@@ -275,9 +307,7 @@ hr.colored {
     color: var(--DarkBlue);
 }
 
-
 /* Video Player End */
-
 
 /* Listed on */
 
@@ -298,9 +328,7 @@ hr.colored {
     padding: 10px;
 }
 
-
 /* Listed on End */
-
 
 /*Faq section*/
 
@@ -336,9 +364,7 @@ hr.colored {
     height: 40px;
 }
 
-
 /* FAQ End */
-
 
 /* Footer */
 
@@ -394,7 +420,6 @@ hr.colored {
     text-align: center;
     color: var(--DarkBlue);
 }
-
 
 /* Footer End */
 
@@ -496,6 +521,11 @@ hr.colored {
     }
     /* Custom card End */
     /* Team section */
+    .overlay {
+        width: 75%;
+        margin-top: -10px;
+        height: 67%;
+    }
     .team-wrap {
         width: 90%;
     }
@@ -578,7 +608,6 @@ hr.colored {
         font-size: 38px;
     }
 }
-
 
 /* New style*/
 
@@ -766,7 +795,6 @@ hr.colored {
     }
 }
 
-
 /*Crypto to home style*/
 
 .dot2-img1 {
@@ -835,7 +863,7 @@ hr.colored {
     width: 10px;
 }
 
- ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: var(--LightBlue);
     border-radius: 10px;
 }
