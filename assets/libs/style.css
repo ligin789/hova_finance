@@ -499,6 +499,7 @@ hr.colored {
     }
     .value-wrap {
         width: 90%;
+        margin: 0px auto 50px auto;
     }
     .custom-button {
         font-size: 14px;
@@ -769,6 +770,12 @@ hr.colored {
         display: none;
     }
     .dot-img2 {
+        display: none;
+    }
+    .dot-img6 {
+        display: none;
+    }
+    .dot-img7 {
         display: none;
     }
     .dot-img8 {
