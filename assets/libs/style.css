@@ -243,9 +243,7 @@ hr.colored {
     opacity: 0;
     transition: opacity 0.5s ease;
     /*  */
-    padding: 10px 20px;
     color: white;
-    border: solid 2px white;
     z-index: 1;
 }
 
