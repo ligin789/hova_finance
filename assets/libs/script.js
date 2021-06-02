@@ -1,6 +1,7 @@
 AOS.init({
   duration: 1600,
 })
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 
 // Navbar link selection
