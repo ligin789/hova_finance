@@ -887,3 +887,36 @@ hr.colored {
     background: var(--LightBlue);
     border-radius: 10px;
 }
+
+#TeamSection {
+    margin-top: -70px;
+}
+
+#HowToBuy {
+    margin-top: -70px;
+}
+
+#FAQSection {
+    margin-top: -70px;
+    position: absolute;
+}
+
+#TimelineSection {
+    position: absolute;
+    margin-top: -70px;
+}
+
+#TokenmicsSection {
+    position: absolute;
+    margin-top: -83px;
+}
+
+#WhyHovaSection {
+    position: absolute;
+    margin-top: -70px;
+}
+
+#VisionSection {
+    position: absolute;
+    margin-top: -70px;
+}

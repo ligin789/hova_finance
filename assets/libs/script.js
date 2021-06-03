@@ -144,7 +144,7 @@ $(window).scroll(function () {
   $('.page-section-for-scroll').each(function (i) {
 
     if ($(this).position().top
-      <= distance + 250) {
+      <= distance -450) {
 
       $('.navbar-nav a.active')
         .removeClass('active');
