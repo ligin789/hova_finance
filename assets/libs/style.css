@@ -909,6 +909,7 @@ hr.colored {
 #WhyHovaSection,
 #VisionSection {
     margin-top: -70px;
+    position: absolute;
 }
 
 #TokenmicsSection {
