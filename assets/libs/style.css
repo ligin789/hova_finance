@@ -902,21 +902,12 @@ hr.colored {
     border-radius: 10px;
 }
 
-#TeamSection {
-    margin-top: -70px;
-}
-
-#HowToBuy {
-    margin-top: -70px;
-}
-
-#FAQSection {
-    margin-top: -70px;
-    position: absolute;
-}
-
-#TimelineSection {
-    position: absolute;
+#TeamSection,
+#HowToBuy,
+#FAQSection,
+#TimelineSection,
+#WhyHovaSection,
+#VisionSection {
     margin-top: -70px;
 }
 
@@ -925,12 +916,13 @@ hr.colored {
     margin-top: -83px;
 }
 
-#WhyHovaSection {
+#PaywithBiometrics,
+#GenerateRevenueWithHova,
+#CryptoToHome,
+#ExchangeCryptoInstantly,
+#Crypto-BasedPlatforms,
+#CryptoDebitCards,
+#MakeInformedDecisions {
     position: absolute;
-    margin-top: -70px;
-}
-
-#VisionSection {
-    position: absolute;
-    margin-top: -70px;
+    margin-top: -120px;
 }
