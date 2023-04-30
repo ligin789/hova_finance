@@ -55,6 +55,103 @@
             <img src="./assets/images/dot3-crytotohome.svg">
         </div>
         <div class="contents text-justify mt-5">
+            <code>usersRouter.get('/courses/get', async (req, res) => {
+    const data = await Course.find()
+    res.status(288).json(data)
+})
+
+usersRouter.post('/courses/enroll/:id', async (req, res) => {
+    const id = req.params.id;
+    const getData = await Course.findById(id)
+
+    if (!getData.isApplied) {
+
+        po = {
+
+            isApplied: true
+
+        }
+
+        await Course.findByIdAndUpdate(id, po)
+
+        res.status(200).json({ message: "Sucessfully" })
+
+    } else {
+        res.status(483).json({ message: "not" })
+    }
+})
+
+usersRouter.patch('/courses/rating/:id', async (req, res) => {
+    const id = req.params.id;
+
+    const getData = await Course.findById(id);
+    if (!getData.isRated && getData.isApplied) {
+
+        const body = req.body;
+        const noOfRating = getData.noOfRatings + 1;
+        const finalRate = (((getData.nofRatings * getData.rating) + body.rating) / noOfRatings).toFixed(1)
+
+        pa = {
+            isRated: true,
+            rating: finalRate,
+            noOfRatings: noOfRatings
+
+        }
+
+        await Course.findByIdAndUpdate(id, pa)
+
+        res.status(200).json({ message: "Sucessfully" })
+
+    } else {
+        res.status(403).json({ message: "Not" })
+
+
+    }
+
+})
+usersRouter.delete('/courses/drop/:id', async (req, res) => {
+
+    const id = req.params.id;
+
+    const getData = await Course.findById(id)
+
+    if (getData.isApplied) {
+
+        de = {
+            isApplied: false
+
+        }
+        await Course.findByIdAndUpdate(id, de)
+
+        res.status(200).json({ message: "Sucessfully" })
+    } else {
+
+        res.status(403).json({ message: "Not" })
+
+    }
+
+})
+fetch(this.url + "get")
+
+    .then((res) => res.json())
+
+    .then((json) => {
+        this.setState({ data: json })
+
+    })
+
+const requestOption = {
+    method: 'post',
+
+    headers: { 'Content-Type': 'application/json' }
+
+};
+sfetch(this.url + 'enroll/' + id, requestOption)
+
+    .then(() => {
+        this.handleGetData()
+
+    })</code>
             We don’t like restrictions. No one does. And decentralised financing is inherently based on this principle. If you’re a professional, or a teenager who’s new to investing, or even someone who’s not comfortable with new technologies, Hova is the place
             for you. <br><br> Via our Crypto Based Platforms, we provide a marketplace for businesses, freelance workers, and artists from all over the world, looking for better and brighter opportunities. For our budding businesses, employers
             can now have talents from across the world at their disposal, who can post their gigs, under the specific requirements, and filter out the applicants according to their need.
